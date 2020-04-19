@@ -1,13 +1,120 @@
-html, body{
+
+
+
+    html, body{
+        height: 100%;
+        margin: 0px;
+    }
+    
+    .container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr .5fr 1fr 1fr 1fr  auto;
+        grid-gap: 10px;
+        min-height: 100%;
+    }
+    
+    #header{ 
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-image: linear-gradient(45deg, rgb(94, 26, 94), rgba(255,0,0,1));
+        opacity: .7;
+        color: whitesmoke;
+    grid-column-start: 1;
+    grid-column-end:6;
+    font-size: 3em; 
+      }
+    
+    
+    #navigation{ 
+    
+        display:flex;
+        align-self: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        grid-column-start: 1;
+    grid-column-end:6;
+    
+      }
+    
+    
+      #navigation > button{ 
+        margin-right: 1em;
+          }
+        
+          .button{  
+              background-color: rgb(175, 76, 117); /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .button:hover {
+            background-color:rgb(218, 107, 153) ;
+           
+          }
+    
+          #article-one-image{
+              height: 100%;
+            grid-column-start: 1;
+            grid-column-end:3;
+    
+            background-image: url(images/cupcakes-690040_1920.jpg);
+            background-size: 100% 100%;
+          }
+    
+    #article-one{ 
+        height: 100%;
+    
+        grid-column-start: 3;
+    grid-column-end:4;
+      }
+    
+      #article-two-image{
+          height: 100%;
+        grid-column-start: 3;
+    grid-column-end:6;
+    background-image: url(images/cake-1284548_1920.jpg);
+    background-size: 100% 100%;
+    }
+    
+      #article-two{ 
+          width: 100%;
+          text-align: right;
     height: 100%;
-    margin: 0px;
-}
+        grid-column-start: 1;
+    grid-column-end:3;
+      }
+    
+    
+      #about-me{ 
+          display: flex;
+          justify-content: center;
+        grid-column-start: 2;
+        grid-column-end:5;
+      }
+    
+      footer{
+          display: flex;
+          justify-content: center;
+          color: white;
+        background: purple;
+        grid-column-start: 1;
+        grid-column-end:6;
+      }
+    
+
+@media (min-width: 900px){
 
 .container{
     display: grid;
     align-items: center;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1.5fr .5fr 1fr 1fr 1fr  auto;
+    grid-template-rows: 1.3fr .5fr 1fr 1fr 1fr  auto;
     grid-gap: 10px;
     min-height: 100%;
 }
@@ -103,3 +210,4 @@ grid-column-end:4;
     grid-column-start: 1;
     grid-column-end:6;
   }
+}
