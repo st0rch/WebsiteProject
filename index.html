@@ -5,18 +5,24 @@
     <title>My Food Blog</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="index-style.css" rel="stylesheet" />
+    <link href="Styles/index-style.css" rel="stylesheet" />
 </head>
-
 
 <body>
 
-    <div class="container">
-        <div id="header">My Tasty Treats <img id="logo" src="images/Tasty Treats Logo.png"> </div>
+    <div class="grid-container">
+        <div class="header">My <em>Tasty</em> Treats <img id="logo" src="images/Tasty Treats Logo.png"> </div>
 
-        <div id="navigation">
-            <button class="button">shop</button>
-            <button class="button">subscribe</button>
+        <div class="navigation">
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">Shop</a>
+                    <a href="#">Past Recipes</a>
+                    <a href="#">Subscribe</a>
+                </div>
+            </div>
+
             <a href="https://facebook.com" class="fa fa-facebook"></a>
             <a href="https://twitter.com" class="fa fa-twitter"></a>
             <a href="https://instagram.com" class="fa fa-instagram"></a>
@@ -24,7 +30,7 @@
         </div>
 
         <div class="card card-1">
-            <a href="index.html">
+            <a href="blog-post.html">
                 <img src="images/Cupcakes.jpg" id="card-image" alt="Some cupcakes">
                 <div class="card-container">
                     <h4>
@@ -32,39 +38,39 @@
                     </h4>
             </a>
             <p>Delicious Cupcake recipe</p>
+            </div>
         </div>
-    </div>
 
-    <div class="card card-2">
-        <a href="index.html">
-            <img src="images/Cake.jpg" id="card-image" alt="Delicious Fruit Cake">
+        <div class="card card-2">
+            <a href="index.html">
+                <img src="images/Cake.jpg" id="card-image" alt="Delicious Fruit Cake">
 
-            <div class="card-container">
-                <h4>
-                    <b>Delicious Fruit Cake</b>
-                </h4>
-        </a>
-        <p>Wow! This is really a cake!</p>
-    </div>
-    </div>
-
-
-    <div class="card card-3">
-        <a href="index.html">
-            <img src="images/Berries.jpg" id="card-image" alt="Just Some Berries">
-
-            <div class="card-container">
-                <h4>
-                    <b> Just Some Berries</b>
-                </h4>
-        </a>
-        <p>These are literally just berries.</p>
-    </div>
-    </div>
+                <div class="card-container">
+                    <h4>
+                        <b>Delicious Fruit Cake</b>
+                    </h4>
+            </a>
+            <p>Wow! This is really a cake!</p>
+            </div>
+        </div>
 
 
-    <div id="about-me">About Us</div>
-    <footer>Created by Cody Storch - All rights reserved</footer>
+        <div class="card card-3">
+            <a href="index.html">
+                <img src="images/Berries.jpg" id="card-image" alt="Just Some Berries">
+                <div class="card-container">
+                    <h4>
+                        <b> Just Some Berries</b>
+                    </h4>
+            </a>
+            <p>These are literally just berries.</p>
+            </div>
+        </div>
+
+
+        <div id="bottom-icon"><img id="logo" src="images/Tasty Treats Logo.png"></div>
+        <footer>Created by Cody Storch - All rights reserved</footer>
     </div>
 </body>
+
 </html>
